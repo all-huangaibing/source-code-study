@@ -16,9 +16,7 @@ public class Person {
 	
 	@Value("${person.nickName}")
 	private String nickName;
-	
-	
-	
+
 	public String getNickName() {
 		return nickName;
 	}
@@ -44,8 +42,7 @@ public class Person {
 		this.age = age;
 	}
 	public Person() {
-		super();
-		// TODO Auto-generated constructor stub
+		System.out.println("create person success¡£¡£¡£" );
 	}
 	@Override
 	public String toString() {

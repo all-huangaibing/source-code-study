@@ -4,8 +4,8 @@ package com.huang.ai.bing.config;
 import com.huang.ai.bing.bean.Person;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.ComponentScans;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 //配置类==配置文件
 @Configuration  //告诉Spring这是一个配置类
@@ -27,6 +27,7 @@ import org.springframework.context.annotation.Configuration;
 //FilterType.ASPECTJ：使用ASPECTJ表达式
 //FilterType.REGEX：使用正则指定
 //FilterType.CUSTOM：使用自定义规则
+@EnableAspectJAutoProxy
 public class MainConfig {
 	
 	//给容器中注册一个Bean;类型为返回值的类型，id默认是用方法名作为id

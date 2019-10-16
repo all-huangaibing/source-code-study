@@ -206,6 +206,15 @@ Spring容器的refresh()【创建刷新】;
 	4）、事件驱动模型；
 		ApplicationListener；事件监听；
 		ApplicationEventMulticaster；事件派发：
+
+
+
+
+
+		InstantiationAwareBeanPostProcessor在bean实例化之前执行，试图返回一个bean实例
+		InstantiationAwareBeanPostProcessor 创建实例化之后，初始化的同时
+		MergedBeanDefinitionPostProcessor创建实例之后，初始化之前
+
 	
 			
 					

@@ -1,5 +1,6 @@
 package com.huang.ai.bing;
 
+import com.huang.ai.bing.aop.MathCalculator;
 import com.huang.ai.bing.bean.Person;
 import com.huang.ai.bing.config.MainConfig;
 import org.springframework.context.ApplicationContext;
@@ -16,7 +17,11 @@ public class MainTest {
 		ApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfig.class);
 		Person bean = applicationContext.getBean(Person.class);
 		System.out.println(bean);
-		
+
+		MathCalculator mathCalculator = applicationContext.getBean(MathCalculator.class);
+		int div = mathCalculator.div(12, 0);
+		System.out.println("div = " + div);
+
 		String[] namesForType = applicationContext.getBeanNamesForType(Person.class);
 		for (String name : namesForType) {
 			System.out.println(name);
