@@ -1,7 +1,6 @@
 package com.huang.ai.bing.config;
 
 
-import com.huang.ai.bing.bean.Person;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

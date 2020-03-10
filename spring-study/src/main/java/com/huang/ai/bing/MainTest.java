@@ -1,8 +1,8 @@
 package com.huang.ai.bing;
 
 import com.huang.ai.bing.aop.MathCalculator;
-import com.huang.ai.bing.bean.Person;
 import com.huang.ai.bing.config.MainConfig;
+import com.huang.ai.bing.config.Person;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
