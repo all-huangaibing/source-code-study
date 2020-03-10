@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://rm-uf6m26d9smvs9ls8l8o.mysql.rds.aliyuncs.com:3306/member01dev?characterEncoding=utf-8&amp;useSSL=false&amp;serverTimezone=Asia/Shanghai"/>
+                <property name="username" value="memberdev"/>
+                <property name="password" value="userdev@2019"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="mapper/BatchResultMapper.xml"/>
+<!--        <mapper class="org.mybatis.builder.PostMapper"/>-->
+    </mappers>
+</configuration>

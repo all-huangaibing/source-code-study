@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="com.huang.ai.bing.mapper.BatchResultMapper">
+    <resultMap id="BaseResultMap" type="com.huang.ai.bing.pojo.BatchResult">
+        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="group_id" jdbcType="VARCHAR" property="groupId" />
+        <result column="handle_status" jdbcType="INTEGER" property="handleStatus" />
+        <result column="total" jdbcType="INTEGER" property="total" />
+        <result column="error_total" jdbcType="INTEGER" property="errorTotal" />
+        <result column="origin_url" jdbcType="VARCHAR" property="originUrl" />
+        <result column="error_Url" jdbcType="VARCHAR" property="errorUrl" />
+        <result column="remark" jdbcType="VARCHAR" property="remark" />
+        <result column="created_at" jdbcType="TIMESTAMP" property="createdAt" />
+        <result column="updated_at" jdbcType="TIMESTAMP" property="updatedAt" />
+        <result column="deleted_at" jdbcType="TIMESTAMP" property="deletedAt" />
+    </resultMap>
+    <select id="selectBatchResult"  resultMap="BaseResultMap">
+         select * from batch_result where id = #{id}
+     </select>
+</mapper>
