@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  * 将后置处理器加入到容器中
  * @author lfy
  */
-@Component
+//@Component
 public class MyBeanPostProcessor implements BeanPostProcessor {
 
 	public MyBeanPostProcessor() {

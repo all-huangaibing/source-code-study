@@ -12,7 +12,7 @@ import java.util.Arrays;
  * @author huangaibing
  * @date 2019/10/10 16:52
  */
-@Component
+//@Component
 public class MyBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
 
 
